@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
-h1{
-    color:red;
+.my-nav{
+    background-color: rgb(0, 0, 53);
+    z-index: 99;
+}
+
+.my-bg-color-container{
+    background-color: rgb(27, 3, 91);
+    height: 100vh;
+    max-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 30px;
+
+    overflow-y: auto;
+}
+
+.my-container{
+    gap: 40px;
+    width: 70%;
+}
+
+.my-card{
+    width: calc(100%  / 4 - 40px / 3 * 2);
+    background-color: rgb(0, 0, 53)
+}
+
+.my-card img{
+    width: 220px;
+    height: 220px;
 }

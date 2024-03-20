@@ -18,15 +18,25 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body data-bs-theme='dark' >
+<body data-bs-theme='dark'>
 
     <div id='app'>
-        <div class="container ">
-            <ul>
-                <li v-for="currentDisk in diskList">
-
-                </li>
-            </ul>
+        <nav class="navbar position-fixed top-0 start-0 end-0 my-nav">
+            <div class="container">
+                <h1 class='' >Music Sound</h1>
+            </div>
+        </nav>
+        <div class="container-fluid d-flex flex-wrap flex-column align-items-center my-bg-color-container">
+            <div class='d-flex my-container flex-wrap justify-content-center'>
+                <div class="card d-flex flex-column align-items-center my-card" v-for="currentDisk in diskList">
+                    <img :src="currentDisk.poster" class="img-fluid  card-img-top mt-2 p-3" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center ">
+                        <h5 class="card-title text-center ">{{currentDisk.title}}</h5>
+                        <p class="card-text">{{currentDisk.author}}</p>
+                        <strong>{{currentDisk.year}}</strong>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
